@@ -1,7 +1,12 @@
+import { computeHeadingLevel } from '@testing-library/dom';
 import React from 'react';
 import { Button, Dropdown } from 'react-bootstrap';
 
-const Header = () => {
+const Header = props => {
+  const bla = () => {
+    alert(` Hello ${props.props}`);
+  };
+
   return (
     <div className="header">
       <div>
@@ -10,7 +15,7 @@ const Header = () => {
       <div className="header_navigation">
         <Dropdown>
           <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
+            {`${props.props}'s button`}
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
@@ -19,8 +24,8 @@ const Header = () => {
             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Button type="button" class="btn btn-primary">
-          Primary
+        <Button type="button" class="btn btn-primary" onClick={() => bla()}>
+          HELLO
         </Button>
         <a href="#">home</a>
         <a href="#">News Feed</a>

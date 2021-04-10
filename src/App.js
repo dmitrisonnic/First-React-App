@@ -6,9 +6,10 @@ import Navbar from './components/Nav';
 import Profile from './components/Profile';
 
 const App = () => {
+  const prop = 'DIMA';
   return (
     <div className="app-wrapper">
-      <Header />
+      <Header props={prop} />
       <div className="content-wrapper">
         <Navbar />
         <Profile />
