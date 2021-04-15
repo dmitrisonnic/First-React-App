@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Navbar from './components/Nav';
-import Profile from './components/Profile';
+
+import Header from './components/Header/Header';
+import Navbar from './components/Nav/Nav';
+import Profile from './components/Profile/Profile';
 
 const App = () => {
   return (
@@ -11,7 +11,6 @@ const App = () => {
       <Header />
       <Navbar />
       <Profile />
-      <Footer />
     </div>
   );
 };
