@@ -6,8 +6,9 @@ const MyPosts = () => {
   return (
     <div>
       <div className={profile.item}>
-        <Posts message="Hi, how are you?" />
-        <Posts message="It is my first post" />
+        <Posts message="Hi, how are you?  " likesCount="2" />
+        <Posts message="It is gitmy first post" likesCount="3" />
+        <Posts />
       </div>
     </div>
   );
