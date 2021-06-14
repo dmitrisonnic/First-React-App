@@ -5,7 +5,7 @@ import profile from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <div className={profile.content}>
+    <div>
       <div>
         <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" />
       </div>
