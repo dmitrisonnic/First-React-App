@@ -7,7 +7,7 @@ const Profile = () => {
   return (
     <div>
       <div>
-        <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" />
+        <img alt="ava" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" />
       </div>
       <div>avatar + description</div>
       <MyPosts />
