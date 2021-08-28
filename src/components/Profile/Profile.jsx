@@ -2,14 +2,12 @@ import React from 'react';
 import MyPosts from './MyPosts/MyPostsProfile';
 
 import profile from './Profile.module.css';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
   return (
     <div>
-      <div>
-        <img alt="ava" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" />
-      </div>
-      <div>avatar + description</div>
+      <ProfileInfo />
       <MyPosts />
     </div>
   );
