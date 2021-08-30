@@ -6,15 +6,22 @@ import Header from './components/Header/Header';
 import Navbar from './components/Nav/Nav';
 import Profile from './components/Profile/Profile';
 
-const App = () => {
+const App = props => {
+  let postData = [
+    { id: 1, message: 'Hi, how are you?', likesCount: 2 },
+    { id: 2, message: 'It is gitmy first post', likesCount: 11 },
+  ];
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
         <div className="app-wrapper-content">
-          <Route path="/dialogs" component={Dialogs} />
-          <Route path="/profile" component={Profile} />
+          <Route
+            path="/dialogs"
+            render={() => <Dialogs DialogsData={props.DialogsData} messagesData={props.messagesData} />}
+          />
+          <Route path="/profile" render={() => <Profile postData={props.postData} />} />
           <Route path="/news" component={Dialogs} />
           <Route path="/music" component={Dialogs} />
           <Route path="/settings" component={Dialogs} />
